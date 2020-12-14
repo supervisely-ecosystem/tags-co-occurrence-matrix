@@ -13,9 +13,10 @@ WORKSPACE_ID = int(os.environ['context.workspaceId'])
 PROJECT_ID = int(os.environ['modal.state.slyProjectId'])
 DATASET_ID = int(os.environ.get('modal.state.slyDatasetId'))
 
-@my_app.callback("interactive_coexistence_matrix")
+
+@my_app.callback("tags_co_occurrence_matrix")
 @sly.timeit
-def interactive_coexistence_matrix(api: sly.Api, task_id, context, state, app_logger):
+def tags_co_occurrence_matrix(api: sly.Api, task_id, context, state, app_logger):
     if DATASET_ID is not None:
        datasets_ids = [DATASET_ID]
     else:
@@ -63,8 +64,6 @@ def interactive_coexistence_matrix(api: sly.Api, task_id, context, state, app_lo
                         'props' : [('border',
                                     '2px solid green')]}]).render()
 
-    print(df)
-
     my_app.stop()
 
 
@@ -73,7 +72,7 @@ def main():
         "PROJECT_ID": PROJECT_ID
     })
 
-    my_app.run(initial_events=[{"command": "interactive_coexistence_matrix"}])
+    my_app.run(initial_events=[{"command": "tags_co_occurrence_matrix"}])
 
 
 if __name__ == "__main__":
