@@ -8,7 +8,7 @@ my_app = sly.AppService()
 TEAM_ID = int(os.environ['context.teamId'])
 WORKSPACE_ID = int(os.environ['context.workspaceId'])
 PROJECT_ID = int(os.environ['modal.state.slyProjectId'])
-DATASET_ID = int(os.environ.get('modal.state.slyDatasetId'))
+DATASET_ID = os.environ.get('modal.state.slyDatasetId', None)
 
 project = None
 CELL_TO_IMAGES = None
