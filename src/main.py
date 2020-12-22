@@ -49,7 +49,7 @@ def tags_co_occurrence_matrix(api: sly.Api, task_id, context, state, app_logger)
 
     progress = sly.Progress("Processing", total_progress, app_logger)
     for dataset_id in datasets_ids:
-        #dataset = api.dataset.get_info_by_id(dataset_id)
+        dataset = api.dataset.get_info_by_id(dataset_id)
         images = api.image.get_list(dataset_id)
         for image_infos in sly.batched(images):
             image_ids = [image_info.id for image_info in image_infos]
@@ -64,7 +64,7 @@ def tags_co_occurrence_matrix(api: sly.Api, task_id, context, state, app_logger)
 
                 all_pairs = set(frozenset(pair) for pair in itertools.product(tags_on_image, tags_on_image))
                 for p in all_pairs:
-                    counters[p].append(image_info)
+                    counters[p].append((image_info, dataset))
             progress.iters_done_report(len(image_infos))
             fields = [
                 {"field": "data.progressCurrent", "payload": progress.current},
