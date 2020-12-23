@@ -12,7 +12,7 @@
   "gui_template": "src/gui.html",
   "task_location": "workspace_tasks",
   "isolate": true,
-  "icon": "https://img.icons8.com/color/96/000000/attract-customers.png",
+  "icon": "https://i.imgur.com/1dnzNCn.png",
   "icon_background": "#FFFFFF",
   "context_menu": {
     "target": ["images_project", "images_dataset"],
