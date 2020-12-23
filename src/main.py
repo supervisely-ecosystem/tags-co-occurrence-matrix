@@ -90,7 +90,7 @@ def tags_co_occurrence_matrix(api: sly.Api, task_id, context, state, app_logger)
     sly.fs.ensure_base_path(local_path)
     with open(local_path, "w") as text_file:
         print(my_app.app_url, file=text_file)
-    remote_path = api.file.get_free_name(TEAM_ID, f"/reports/tags_interactive_occurrence_matrix/{report_name}")
+    remote_path = api.file.get_free_name(TEAM_ID, f"/reports/tags-co-occurrence/{report_name}")
     report_name = sly.fs.get_file_name_with_ext(remote_path)
     file_info = api.file.upload(TEAM_ID, local_path, remote_path)
     report_url = api.file.get_url(file_info.id)
