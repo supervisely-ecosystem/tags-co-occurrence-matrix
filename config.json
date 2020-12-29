@@ -2,7 +2,8 @@
   "name": "Tags co-occurrence matrix",
   "type": "app",
   "categories": [
-    "report"
+    "report",
+    "tag"
   ],
   "description": "Explore images for every combination of tags pairs in co-occurrence table",
   "docker_image": "supervisely/base-py-sdk:6",
