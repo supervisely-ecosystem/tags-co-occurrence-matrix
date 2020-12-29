@@ -39,7 +39,7 @@ Additional comments:
 
 **Step 3:** Wait until the app is started, press `Open` button in `Workspace tasks`. You don't need to wait untill all images are processed: if open button is enabled then click it.
 
-<img src="https://i.imgur.com/BUOXZWo.png"/>
+<img src="https://i.imgur.com/E3AnaLN.png"/>
 
 
 **Step 4:** Explore you data with interactive table: click on cells to access corresponding images and open them in labeling UI.
