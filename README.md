@@ -51,4 +51,4 @@ Additional comments:
 Example of the results:
 Stop from App UI  |  Stop from workspace tasks page
 :-------------------------:|:-----------------------------------:
-![](https://i.imgur.com/YmjtMMc.png)  |  ![](https://i.imgur.com/PLFUHmB.png)
+![](https://i.imgur.com/6ZovGTo.png)  |  ![](https://i.imgur.com/PLFUHmB.png)
