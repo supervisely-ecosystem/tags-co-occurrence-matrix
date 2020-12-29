@@ -35,7 +35,7 @@ Additional comments:
 
 **Step 2:** Run app from the context menu of images project or dataset: `context menu` -> `Reports` -> `Tags Co-Occurrence Matrix`
 
-<img src="https://i.imgur.com/625bU1O.png" width="500px"/>
+<img src="https://i.imgur.com/xcMc6pe.png"/>
 
 **Step 3:** Wait until the app is started, press `Open` button in `Workspace tasks`. You don't need to wait untill all images are processed: if open button is enabled then click it.
 
