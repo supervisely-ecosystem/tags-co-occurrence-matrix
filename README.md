@@ -1,5 +1,5 @@
 <div align="center" markdown>
-<img src="https://i.imgur.com/7xr7hLj.png"/>
+<img src="https://i.imgur.com/5p80yOt.png"/>
 
 # Tags Co-Occurrence Matrix
 
@@ -27,7 +27,7 @@ Additional comments:
 - This App might be used to find “suspicious annotations”. If annotator has confused the tag, we might see it as an “unexpected value” in the cell of “coexistence matrix”
 - Gradient based colors of the matrix’ cells might be useful (will be added in next version)
 
-<img src="https://i.imgur.com/zAnbg5r.png"/>
+<img src="https://i.imgur.com/Zm8va1F.png"/>
 
 ## How To Use
 
@@ -39,7 +39,7 @@ Additional comments:
 
 **Step 3:** Wait until the app is started, press `Open` button in `Workspace tasks`. You don't need to wait untill all images are processed: if open button is enabled then click it.
 
-<img src="https://i.imgur.com/FplcD3W.png"/>
+<img src="https://i.imgur.com/BUOXZWo.png"/>
 
 
 **Step 4:** Explore you data with interactive table: click on cells to access corresponding images and open them in labeling UI.
@@ -51,4 +51,4 @@ Additional comments:
 Example of the results:
 Stop from App UI  |  Stop from workspace tasks page
 :-------------------------:|:-----------------------------------:
-![](https://i.imgur.com/YmjtMMc.png)  |  ![](https://i.imgur.com/J8MH2FR.png)
+![](https://i.imgur.com/YmjtMMc.png)  |  ![](https://i.imgur.com/PLFUHmB.png)
